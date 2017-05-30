@@ -18,7 +18,7 @@
    * by entering --> **psql --username=** <username of your postgresql database> **--password** <ENTER then enter password>
    * upon entering, key in --> **create database** <"orgsite" is preffered> **owner postgres** <ENTER>
    * CTRL C once the database is created
-   *NOTE: change the Databases information in the settings.py according to your own database details*
+   * *NOTE: change the Databases information in the settings.py according to your own database details*
 1. Proceed to the directory path of the application's folder.
 1. Key in --> python manage.py makemigrations and then python manage.py migrate
 1. Once completed, create a superuser/admin --> python manage.py createsuperuser
@@ -31,6 +31,8 @@
 **VIEW ORGANIZATION PROFILE** - As a guest, without even logging in, anyone can already view the organization's profile. One can navigate through what the organization is ABOUT and what ACTIVITIES the organization is having. In the ABOUT tab, you can see information about the organization and how you can reach out to its officers via social media. In the ACTIVITIES tab, you can view the list of activities or announcements starting from the recent ones up until the old ones.
 
 **LOGIN AND LOGOUT** - *Note: the superuser account can not be used as an account of any organization.* If you successfully log into the website, it will let you access your organization's profile. If you failed to get in, it will stay in the homepage where you are told at the Login dropdown that the credentials you inputted are invalid. You can still access your organization's profile but you can only view what's in it. No editing. No adding. No deleting. Just viewing. There is also a logout feature to prevent compromising of data when you are no longer trying to do some additions and modifications in your profile.
+
+![login logout feature](https://cloud.githubusercontent.com/assets/15230563/26587266/717700d2-4584-11e7-98b9-89294af29f92.png)
 
 **SEARCH ORGANIZATION** - In the section after the UNISO Site cover homepage, the search engine enables the user to find a specific organization by typing in either the shortcut or substrings of the organization's name. The search mechanism loops through the names and shortcuts of the organization and finds matches with the input. The list of organization will then be filtered according to the input of the user. 
 
