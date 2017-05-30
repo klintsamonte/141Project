@@ -2,21 +2,21 @@
 
 #### The UNISO Site is an all-in-one website for recognized student organizations in UP Cebu which serves as an avenue for proper information dissemination among the student-managed organizations in the said institution.
 
-### STEPS in SETTING UP THE WEBSITE in your LOCALHOST
+## STEPS in SETTING UP THE WEBSITE in your LOCALHOST
 
 **Important Reminders:**
 * Place the folder in your preferred directory path.
-* This app is using PostgreSQL for storing significant data so it is important to have such database management system in your computer.
+* This app is using PostgreSQL for storing significant data so it is important to have such database management system in your computer. Here is a link of instruction to install PostgreSQL --> http://www.postgresqltutorial.com/install-postgresql/
 * This app is also using Python and Django in its backend framework so be sure to install necessary files and download important ones such as the psycopg2.
-* Another is that this is a web application and is using BootstrapCDN that loads necessary CSS and JS files remotely, from its servers so make sure you have a steady internet connection to not encounter distorted user interface.
+* Another is that this is a web application and is using BootstrapCDN that loads necessary CSS and JS files remotely, from its servers so make sure you have a steady internet connection to not encounter distorted user interface. *Note: It is advised to use Mozilla Firefox as web browser in running the app*
 
-**Let's Get Started. **
+**Let's Get Started.**
 
 1. Open the command line and create a database
-   a. by entering --> psql --username=<username of your postgresql database> --password <ENTER then enter password>
-   b. upon entering, key in --> create database <"orgsite" is preffered> owner postgres <ENTER>
-   c. CTRL C once the database is created
-   NOTE: change the Databases information in the settings.py according to your own database details
+   * by entering --> **psql --username=** <username of your postgresql database> **--password** <ENTER then enter password>
+   * upon entering, key in --> **create database** <"orgsite" is preffered> **owner postgres** <ENTER>
+   * CTRL C once the database is created
+   *NOTE: change the Databases information in the settings.py according to your own database details*
 1. Proceed to the directory path of the application's folder.
 1. Key in --> python manage.py makemigrations and then python manage.py migrate
 1. Once completed, create a superuser/admin --> python manage.py createsuperuser
@@ -24,20 +24,20 @@
 1. Lastly, open 127.0.0.1:8000 to start using the application.
 1. Proceed to Django Admin to begin populating the database using the superuser credentials
 
-### **FEATURES AND FUNCTIONS**
+## **FEATURES AND FUNCTIONS**
 
 **VIEW ORGANIZATION PROFILE** - As a guest, without even logging in, anyone can already view the organization's profile. One can navigate through what the organization is ABOUT and what ACTIVITIES the organization is having. In the ABOUT tab, you can see information about the organization and how you can reach out to its officers via social media. In the ACTIVITIES tab, you can view the list of activities or announcements starting from the recent ones up until the old ones.
 
-**LOGIN AND LOGOUT** - Note: the superuser account can not be used as an account of any organization. If you successfully log into the website, it will let you access your organization's profile. If you failed to get in, it will stay in the homepage where you are told at the Login dropdown that the credentials you inputted are invalid. You can still access your organization's profile but you can only view what's in it. No editing. No adding. No deleting. Just viewing. There is also a logout feature to prevent compromising of data when you are no longer trying to do some additions and modifications in your profile.
+**LOGIN AND LOGOUT** - *Note: the superuser account can not be used as an account of any organization.* If you successfully log into the website, it will let you access your organization's profile. If you failed to get in, it will stay in the homepage where you are told at the Login dropdown that the credentials you inputted are invalid. You can still access your organization's profile but you can only view what's in it. No editing. No adding. No deleting. Just viewing. There is also a logout feature to prevent compromising of data when you are no longer trying to do some additions and modifications in your profile.
 
-**SEARCH ORGANIZATION** - In the section after the UNISO Site cover homepage, the search engine
+**SEARCH ORGANIZATION** - In the section after the UNISO Site cover homepage, the search engine enables the user to find a specific organization by typing in either the shortcut or substrings of the organization's name. The search mechanism loops through the names and shortcuts of the organization and finds matches with the input. The list of organization will then be filtered according to the input of the user. 
 
 **VIEW LATEST POSTED ACTIVITIES** - In another section in the homepage, the latest 6 activities, could be events or announcements, posted by the different organizations are placed in a slider for the users to swipe for easy navigation. These 6 activities are arranged in a manner that the latest posted activity is on the first slider followed by the later ones. Beside the slider is a set of basic information about the activity. The name of the organization can be clicked, and it redirects the page to the organization's profile to read more about the event. 
 
 **VIEW LIST OF ACTIVITIES** - Under the slider for the 6 activities, a button can be found so the users can be able to view not just 6 but all the activities posted by the organizations in another page. The list of activities are also arranged in a way that the latest one is found in the beginning followed by the later ones. Similar to the slider, every activity has an organization name which is also clickable that can proceed to the organization's profile to learn more about the event or announcement, and its other activities.
 
-**SEARCH RESERVED VENUES** -
-
+**SEARCH RESERVED VENUES** - There is a page which highlights the venues that are being reserved for the existing activities. This will let the user know which venues are not available. Also, the page has a search box which lets the user filter the contents and makes it easier to find a specific venue. The search box works the same with the search organization just that it loops through the name of venues. 
+ 
 **VIEW FAQs** - We also added a page for Frequently Asked Questions to resolve confusions by providing answers to these. It has a separate page where you can click on the questions and have your answers revealed after clicking.
 
 **VIEW PROFILE** - After loggin in, the user can already view the organization's profile where it can perform certain functions that will be discussed later. There are certain features and functionalities that can only be seen if the user is logged in which can not be seen by those who are not logged in or just guests. The Profile contains the organzation's basic information. You can also view other organization's profile and you will not see buttons that can add, modify and delete information in their profile.
