@@ -2,6 +2,8 @@
 
 #### The UNISO Site is an all-in-one website for recognized student organizations in UP Cebu which serves as an avenue for proper information dissemination among the student-managed organizations in the said institution.
 
+![coversection](https://cloud.githubusercontent.com/assets/15230563/26587261/716b4dbe-4584-11e7-96cd-bc259bd3f8ee.png)
+
 ## STEPS in SETTING UP THE WEBSITE in your LOCALHOST
 
 **Important Reminders:**
@@ -16,7 +18,7 @@
    * by entering --> **psql --username=** <username of your postgresql database> **--password** <ENTER then enter password>
    * upon entering, key in --> **create database** <"orgsite" is preffered> **owner postgres** <ENTER>
    * CTRL C once the database is created
-   *NOTE: change the Databases information in the settings.py according to your own database details*
+   * *NOTE: change the Databases information in the settings.py according to your own database details*
 1. Proceed to the directory path of the application's folder.
 1. Key in --> python manage.py makemigrations and then python manage.py migrate
 1. Once completed, create a superuser/admin --> python manage.py createsuperuser
