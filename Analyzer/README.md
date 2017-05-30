@@ -2,6 +2,8 @@
 
 #### The UNISO Site is an all-in-one website for recognized student organizations in UP Cebu which serves as an avenue for proper information dissemination among the student-managed organizations in the said institution.
 
+![coversection](https://cloud.githubusercontent.com/assets/15230563/26587261/716b4dbe-4584-11e7-96cd-bc259bd3f8ee.png)
+
 ## STEPS in SETTING UP THE WEBSITE in your LOCALHOST
 
 **Important Reminders:**
