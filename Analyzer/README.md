@@ -32,8 +32,6 @@
 
 **LOGIN AND LOGOUT** - *Note: the superuser account can not be used as an account of any organization.* If you successfully log into the website, it will let you access your organization's profile. If you failed to get in, it will stay in the homepage where you are told at the Login dropdown that the credentials you inputted are invalid. You can still access your organization's profile but you can only view what's in it. No editing. No adding. No deleting. Just viewing. There is also a logout feature to prevent compromising of data when you are no longer trying to do some additions and modifications in your profile.
 
-![login logout feature](https://cloud.githubusercontent.com/assets/15230563/26587266/717700d2-4584-11e7-98b9-89294af29f92.png)
-
 **SEARCH ORGANIZATION** - In the section after the UNISO Site cover homepage, the search engine enables the user to find a specific organization by typing in either the shortcut or substrings of the organization's name. The search mechanism loops through the names and shortcuts of the organization and finds matches with the input. The list of organization will then be filtered according to the input of the user. 
 
 **VIEW LATEST POSTED ACTIVITIES** - In another section in the homepage, the latest 6 activities, could be events or announcements, posted by the different organizations are placed in a slider for the users to swipe for easy navigation. These 6 activities are arranged in a manner that the latest posted activity is on the first slider followed by the later ones. Beside the slider is a set of basic information about the activity. The name of the organization can be clicked, and it redirects the page to the organization's profile to read more about the event. 
